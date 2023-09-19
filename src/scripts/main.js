@@ -1,9 +1,5 @@
-class people{
-  sayhi() {
-    console.log('Hi')
-  }
-}
-let b = new people()
-b.sayhi()
-let a = 'Hello Hello'
-console.log(a)
+let burger = document.querySelector('.header__burger')
+burger.addEventListener('click',function () {
+  burger.classList.toggle('active')
+  
+})
