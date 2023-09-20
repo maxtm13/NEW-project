@@ -71,7 +71,82 @@
       <div class="scroll__inner-img"><img src="/img/arrow_down.svg" alt=""></div>
       <div class="scroll__inner-text">SCROLL</div>
     </div>
+      
+    <div class="form__inner">
+      <div class="container">
+          <div class="form">
+            <div class="form__title">Рассчитайте стоимость ремонта</div>
+            <form>
+              <div class="text_inner">
+                <p class="text__title">Площадь квартиры:</p>
+                <output id="value"></output>
+              </div>
+              <input class="styled-slider slider-progress" type="range" id="square" min="10" step="1" name="square">
+              <script>
+                const value = document.querySelector("#value");
+                const input = document.querySelector("#square");
+                value.textContent = input.value + ' м2';
+                input.addEventListener("input", (event) => {
+                  value.textContent = event.target.value + ' м2';
+                });
+                for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
+                  e.style.setProperty('--value', e.value);
+                  e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+                  e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+                  e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+                }
+              </script>
+              <p class="text__title">Тип жилья: </p>
+              <div class="type_flore">
+                <label class="radio_count type__radio" for="vtor">
+                  <input type="radio" name="type_area" id="vtor" value="Вторичное жилье">
+                  <img src="/img/radio.svg" alt="">Вторичное жилье
+                </label>
+                <label class="radio_count type__radio" for="novo">
+                  <input type="radio" name="type_area" id="novo" value="Новостройка">
+                  <img src="/img/radio.svg" alt="">Новостройка
+                </label>
+          
+                <label class="radio_count type__radio" for="office">
+                  <input type="radio" name="type_area" id="office" value="Офис">
+                  <img src="/img/radio.svg" alt="">Офис
+                </label>
+          
+              </div>
+              <p class="text__title">Кол-во комнат: </p>
+              <div class="flore_count">
+                <label class="type__radio" for="one">
+                  <input type="radio" name="count" id="one" value="1">
+                  <img src="/img/radio.svg" alt="">
+                  1
+                </label>
+                <label class="type__radio" for="two">
+                  <input type="radio" name="count" id="two" value="2">
+                  <img src="/img/radio.svg" alt="">
+                  2
+                </label>
+                <label class="type__radio" for="more">
+                  <input type="radio" name="count" id="more" value="3+">
+                  <img src="/img/radio.svg" alt="">
+                  3+
+                </label>
+                <label class="type__radio" for="studio">
+                  <input type="radio" name="count" id="studio" value="Студия">
+                  <img src="/img/radio.svg" alt="">
+                  Студия
+                </label>
+          
+              </div>
+              <div class="form__btn">
+                <button class="btn" type="submit"> Отправить </button>
+              </div>
+            </form>
+          
+          </div>
+          </div>
+    </div>
   </section>
+  
 
 
   <script src="/js/main.min.js"></script>
