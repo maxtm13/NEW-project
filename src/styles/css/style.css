@@ -86,7 +86,6 @@ body section {
 body .main {
   position: relative;
   height: calc(100vh - 141px);
-  display: none;
 }
 body .main__img {
   position: absolute;
