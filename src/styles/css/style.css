@@ -51,7 +51,7 @@ body .header .menu__items .item-sub.active::before {
 }
 body .header .menu__items .sub__menu {
   border-radius: 7px;
-  padding-top: 6px ;
+  padding-top: 6px;
   padding-bottom: 6px;
   background-color: #FFF;
   margin-top: 13px;
@@ -110,7 +110,7 @@ body .main__img.animate {
 }
 body .content {
   max-width: 570px;
-  padding-top: 40px ;
+  padding-top: 40px;
   line-height: 1.2;
   position: relative;
 }
@@ -151,7 +151,7 @@ body .feachers {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 451px;
-  gap: 67px 30px ;
+  gap: 67px 30px;
 }
 body .feachers__item {
   display: flex;
@@ -193,6 +193,12 @@ body .scroll__inner-img {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  body .container {
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 900px) {
@@ -419,4 +425,10 @@ body .form .type__radio > input + img {
 body .form .type__radio > input:checked + img {
   border: 3px solid #302594;
   border-radius: 50%;
+}
+@media screen and (max-width: 830px) {
+  body .container {
+    width: 100vw;
+    padding: 0 10px;
+  }
 }
