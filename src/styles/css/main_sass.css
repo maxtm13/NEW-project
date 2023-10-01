@@ -1,0 +1,10 @@
+body {
+  background-color: #94976d;
+  transform: scaleX(0.9);
+}
+body span {
+  background-color: rosybrown;
+}
+body div {
+  color: rgb(167, 37, 69);
+}

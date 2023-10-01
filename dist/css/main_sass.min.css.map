@@ -1,0 +1,1 @@
+{"version":3,"sources":["main_sass.scss"],"names":[],"mappings":"AAAA,KACE,iBAAA,QAOA,kBAAA,WAAA,UAAA,WANA,UACE,iBAAA,QAEF,SACE,MAAA","file":"main_sass.min.css","sourcesContent":["body {\r\n  background-color: #94976d;\r\n  span {\r\n    background-color: rosybrown;\r\n  }\r\n  div {\r\n    color: rgb(167, 37, 69);\r\n  }\r\n  transform: scaleX(0.9);\r\n\r\n}"]}
