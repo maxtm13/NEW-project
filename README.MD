@@ -1,6 +1,6 @@
 ## GULP сборка
 autoprefixer  
-минимизация css, js  
+минимизация html, css, js  
 оптимизация картинок  
 поддержка sass, scss, less  
 
