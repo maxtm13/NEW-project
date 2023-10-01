@@ -11,9 +11,9 @@ autoprefixer
 \/src\/img\/*.{jpg,jpeg,svg}  
 \/src\/script\/*.js  
 #### Результат
-\/dist\/css\/*.min.css
-\/dist\/js\/*.min.js
-\/dist\/img\/*.{jpg,jpeg,svg}
+\/dist\/css\/*.min.css  
+\/dist\/js\/*.min.js  
+\/dist\/img\/*.{jpg,jpeg,svg}  
 
 
 
